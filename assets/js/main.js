@@ -26,7 +26,7 @@ console.log(price);
 if (age < 18) {
     price = price * 0.80;
 } else if (age > 65) {
-    price = price * 0.60
+    price = price * 0.60;
 }
 else {price = price}
 console.log(price);
@@ -38,3 +38,14 @@ var msg = document.getElementById('msg');
 msg.innerHTML = 'Il prezzo del suo biglietto è ' + priceRounded + '€';
 
 
+//bonus css carino
+
+var ageResult = document.getElementById('age_result');
+
+if ( age < 18) {
+    ageResult.innerHTML = 'minore'
+} else if (age > 65) {
+    ageResult.innerHTML = 'adulto over 65'
+} else {
+    ageResult.innerHTML = 'adulto'
+}
